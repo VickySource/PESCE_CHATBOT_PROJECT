@@ -108,12 +108,8 @@ The project is deployed using Vercel.
 ---
 
 ## Live Demo
+https://pesce-chatbot-project.vercel.app/
 
-Add your deployed Vercel URL here:
-
-```text
-https://your-project-name.vercel.app
-```
 
 ---
 
