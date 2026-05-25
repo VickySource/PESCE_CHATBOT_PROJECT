@@ -1,69 +1,59 @@
-# PESCE AI HelpBot 🤖
+# PESCE AI HelpBot
 
-A Rule-Based Knowledge-Based Chatbot developed using Google Dialogflow and integrated with a web interface for PES College of Engineering (PESCE).
-
-## Project Description
-
-This project demonstrates the implementation of a simple AI chatbot capable of handling student queries related to:
-
-- College Information
-- Departments
-- ECE Department
-- Placements
-- Library
-- Hostel Facilities
-- Contact Information
-
-The chatbot uses predefined intents and responses in Dialogflow to simulate knowledge-based agent behavior.
+AI Powered Rule-Based Knowledge Chatbot for PES College of Engineering (PESCE), developed using Google Dialogflow and integrated into a responsive web interface.
 
 ---
 
-## Technologies Used
+## Overview
 
-- Google Dialogflow ES
-- HTML5
-- CSS3
-- JavaScript
-- Dialogflow Messenger
-- Vercel Hosting
+PESCE AI HelpBot is a knowledge-based chatbot designed to assist students and users by answering college-related queries through predefined intents and responses.
+
+The chatbot demonstrates rule-based conversational AI behavior using Google Dialogflow ES.
 
 ---
 
 ## Features
 
-- AI Powered Student HelpBot
 - Rule-Based Chatbot
 - Knowledge-Based Query Handling
-- Modern Responsive UI
-- Dialogflow Integration
-- College Information Assistance
+- Google Dialogflow ES Integration
+- Responsive Web Interface
+- Student Assistance System
+- PESCE Information Portal
+- Modern Chatbot UI
+- Mobile Friendly Design
 
 ---
 
-## 📂 Project Structure
+## Technologies Used
 
-```bash
-PESCE_CHATBOT_PROJECT/
-│
-├── index.html
-└── README.md
-```
-
----
-
-## How It Works
-
-```text
-User Query → Intent Matching → Knowledge Response
-```
-
-The chatbot identifies user intents using Dialogflow training phrases and generates predefined responses.
+- HTML5
+- CSS3
+- Google Dialogflow ES
+- Dialogflow Messenger
+- Vercel Hosting
+- GitHub
 
 ---
 
-## Intents Implemented
+## Chatbot Capabilities
 
-- Welcome Intent
+The chatbot can answer queries related to:
+
+- College Information
+- Engineering Departments
+- ECE Department
+- Placements
+- Hostel Facilities
+- Library Information
+- Contact Details
+
+---
+
+## Implemented Intents
+
+- Default Welcome Intent
+- Default Fallback Intent
 - CollegeInfoIntent
 - DepartmentsIntent
 - ECEIntent
@@ -71,24 +61,93 @@ The chatbot identifies user intents using Dialogflow training phrases and genera
 - LibraryIntent
 - HostelIntent
 - ContactIntent
-- Default Fallback Intent
 
 ---
 
-## 🌐 Live Demo
+## System Workflow
 
-Hosted using Vercel.
+```text
+User Query
+   ↓
+Intent Recognition
+   ↓
+Knowledge Retrieval
+   ↓
+Response Generation
+```
 
 ---
 
+## Project Structure
+
+```bash
+PESCE_CHATBOT_PROJECT/
+│
+├── index.html
+├── README.md
+```
+
 ---
 
-##  Academic Purpose
+## Web Integration
 
-This project was developed as part of an Artificial Intelligence assignment to demonstrate Rule-Based Chatbot Design using Google Dialogflow.
+The chatbot is integrated into the website using Dialogflow Messenger.
+
+```html
+<df-messenger>
+```
+
+This enables real-time interaction between users and the chatbot directly through the web interface.
 
 ---
 
-##  Developer
+## Deployment
 
-VickySource
+The project is deployed using Vercel.
+
+---
+
+## Live Demo
+
+Add your deployed Vercel URL here:
+
+```text
+https://your-project-name.vercel.app
+```
+
+---
+
+## Academic Objective
+
+This project was developed as part of an Artificial Intelligence assignment to demonstrate:
+
+- Rule-Based Chatbot Design
+- Knowledge-Based Agent Behavior
+- Natural Language Interaction
+- Web-Based AI Integration
+
+---
+
+## Future Enhancements
+
+- Dynamic Database Integration
+- AI Recommendation System
+- Voice-Based Interaction
+- Multi-language Support
+- Real-Time College Updates
+
+---
+
+## Developer
+
+### Vicky S
+
+Electronics and Communication Engineering (ECE)
+
+PES College of Engineering
+
+---
+
+## License
+
+This project is developed for educational and academic purposes.
