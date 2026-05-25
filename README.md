@@ -142,7 +142,7 @@ This project was developed as part of an Artificial Intelligence assignment to d
 
 ### Vicky S
 
-Electronics and Communication Engineering (ECE)
+CSE
 
 PES College of Engineering
 
