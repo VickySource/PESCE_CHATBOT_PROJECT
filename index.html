@@ -3,38 +3,305 @@
 
 <head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PESCE AI HelpBot</title>
+<title>PESCE AI HelpBot</title>
 
-    <style>
+<style>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+/* RESET */
 
-        body{
-            font-family:Arial, sans-serif;
-            background:#eef3f8;
-            color:#222;
-            line-height:1.7;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* HEADER */
+/* BODY */
 
-        header{
-            background:linear-gradient(135deg,#003366,#0059b3);
-            color:white;
-            text-align:center;
-            padding:60px 20px;
-        }
+body{
+    font-family:Arial, sans-serif;
+    background:#eef3f8;
+    color:#222;
+}
 
-        header h1{
-            font-size:55px;
-            margin-bottom:15px;
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#003366,#0059b3);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* TITLES */
+
+.card h2{
+    color:#003366;
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+/* PARAGRAPH */
+
+.card p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+/* LIST */
+
+ul{
+    padding-left:25px;
+}
+
+ul li{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+/* BUTTON */
+
+.website-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#003366;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.website-btn:hover{
+    background:#0059b3;
+}
+
+/* FOOTER */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:16px;
+}
+
+/* DIALOGFLOW CHATBOT */
+
+df-messenger {
+
+    --df-messenger-bot-message: #003366;
+    --df-messenger-button-titlebar-color: #003366;
+    --df-messenger-chat-background-color: #ffffff;
+    --df-messenger-font-color: white;
+    --df-messenger-user-message: #0059b3;
+    --df-messenger-send-icon: #003366;
+
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    width: 420px;
+    height: 650px;
+
+    z-index: 999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:34px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .card h2{
+        font-size:28px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+    ul li{
+        font-size:17px;
+    }
+
+    df-messenger{
+        width:90vw;
+        height:80vh;
+        right:5vw;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>PES College of Engineering</h1>
+
+    <p>AI Powered Student HelpBot</p>
+
+</header>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <!-- ABOUT -->
+
+    <div class="card">
+
+        <h2>About PESCE</h2>
+
+        <p>
+            PES College of Engineering (PESCE), Mandya,
+            is one of the leading engineering institutions
+            in Karnataka providing quality engineering education,
+            laboratories, placements, hostel facilities,
+            technical workshops, and library resources.
+        </p>
+
+        <a class="website-btn"
+           href="https://pesce.ac.in/"
+           target="_blank">
+
+           Visit Official PESCE Website
+
+        </a>
+
+    </div>
+
+    <!-- DEPARTMENTS -->
+
+    <div class="card">
+
+        <h2>Departments</h2>
+
+        <ul>
+            <li>Electronics and Communication Engineering (ECE)</li>
+            <li>Computer Science Engineering (CSE)</li>
+            <li>Electrical and Electronics Engineering (EEE)</li>
+            <li>Mechanical Engineering</li>
+            <li>Civil Engineering</li>
+        </ul>
+
+    </div>
+
+    <!-- FACILITIES -->
+
+    <div class="card">
+
+        <h2>Facilities</h2>
+
+        <ul>
+            <li>Central Library</li>
+            <li>Campus Placements</li>
+            <li>Hostel Facilities</li>
+            <li>Laboratories</li>
+            <li>Sports & Technical Activities</li>
+        </ul>
+
+    </div>
+
+    <!-- CHATBOT INFO -->
+
+    <div class="card">
+
+        <h2>Chat with PESCE AI HelpBot</h2>
+
+        <p>
+            Ask questions about:
+        </p>
+
+        <br>
+
+        <ul>
+            <li>Departments</li>
+            <li>Placements</li>
+            <li>Library</li>
+            <li>Hostel</li>
+            <li>College Information</li>
+            <li>Contact Details</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 PESCE AI HelpBot Project
+    </p>
+
+</footer>
+
+<!-- DIALOGFLOW MESSENGER -->
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+    intent="WELCOME"
+    chat-title="PESCE_helpbot"
+    agent-id="46543fbb-599e-4ba6-89d9-058d9eef3307"
+    language-code="en">
+</df-messenger>
+
+</body>
+
+</html>            margin-bottom:15px;
         }
 
         header p{
